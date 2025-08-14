@@ -33,7 +33,8 @@ Because (P ^ K) ^ K = P, output equals original input if the same key is used fo
 
 #### Simulation : 
 
-<img width="1550" height="517" alt="Simulation_read_write" src="https://github.com/user-attachments/assets/9100c3cb-78b0-4970-8468-0e0ed3332aef" />
+<img width="1550" height="603" alt="Simulation_FIFO" src="https://github.com/user-attachments/assets/425050db-ffae-4fbd-96c6-f10bf63529ee" />
+
 
 - The Write Operation happens inside the FIFO when wr_en is enabled.
 - Plan_data_in is written inside the FIFO after encryption | When wr_en is turned on.
