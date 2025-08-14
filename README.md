@@ -31,6 +31,17 @@ Because (P ^ K) ^ K = P, output equals original input if the same key is used fo
 
 # Outputs 
 
+#### Simulation : 
+
+<img width="1550" height="517" alt="Simulation_read_write" src="https://github.com/user-attachments/assets/9100c3cb-78b0-4970-8468-0e0ed3332aef" />
+
+- The Write Operation happens inside the FIFO when wr_en is enabled.
+- Plan_data_in is written inside the FIFO after encryption | When wr_en is turned on.
+- similarly, Read operation happens when rd_en is turned on and the encrypted data is decrypted to get plain_data_out.
+- For encryption I used simple XOR operation on the *Input Data* with *secret_key* - as shown below 
+
+*Below shows the encrypted data inside the FIFO* 
+
 <img width="1291" height="188" alt="Write_operation_encrypteddata_stored" src="https://github.com/user-attachments/assets/647b9a8b-3739-4f04-ae75-ef7ed9355f9c" />
 
 - Write Operation : The arrow indicated show encrypted data stored in the fifo_synchronous. Which is CIPH=(P^K) meaning P = plain_data and K=         secret_key. This is only visible in test bench as i have writen display function.
